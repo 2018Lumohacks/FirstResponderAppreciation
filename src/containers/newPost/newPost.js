@@ -208,7 +208,10 @@ class NewPost extends Component {
         <div className="NewPost">
             <div className="container">
             <form className="newPostForm">
-                <h2>New Post</h2>
+            <br/>
+                <h2>
+                    Thank Someone Today!
+                </h2>
                 <div className="form-group row">
                     <label htmlFor="title" className="col-sm-2 col-form-label">Title</label>
                     <div className="col-sm-10">
@@ -218,17 +221,14 @@ class NewPost extends Component {
                 <div className="form-group row">
                     <label htmlFor="desc" className="col-sm-2 col-form-label">Description</label>
                     <div className="col-sm-10">
-                       <textarea rows="6" placeholder="Tell us more details in your story..." className="form-control" name="desc" />
+                       <textarea rows="6" placeholder="Tell us your story..." className="form-control" name="desc" />
                     </div>
                 </div>
                 <div className="form-group row">
-                    <label htmlFor="dateTime" className="col-sm-2 col-form-label">Date and Time</label>
-                    <div className="col-sm-10">
-                        <input type="datetime-local" className="form-control" name="dateTime" />
-                    </div>
-                </div>
-                <div className="form-group row">
-                    <label htmlFor="eventLocation" className="col-sm-2 col-form-label">Where the event occurred? </label>
+                    <label htmlFor="eventLocation" className="col-sm-2 col-form-label">
+                        Telling us where and when you recieved assistance will help us 
+                        identify your first responders.
+                    </label>
                     <div className="col-sm-10">
                         <EventMap
                             googleMapURL = "https://maps.googleapis.com/maps/api/js?key=AIzaSyA2BesvtAup0KertJB95K0u7OpBt0xvtZQ&v=3.exp&libraries=geometry,drawing,places"
@@ -237,22 +237,49 @@ class NewPost extends Component {
                             mapElement={<div style={{ height: `100%` }} />}
                             
                         />
+                    </div>                   
+                </div>
+                <div className="form-group row">
+                    <label htmlFor="dateTime" className="col-sm-2 col-form-label">
+                        Date
+                    </label>
+                    <div className="col-sm-10">
+                        <input type="date" className="form-control" name="dateTime" />
                     </div>
-                    
                 </div>
                 <div className="form-group row">
                     <label htmlFor="type" className="col-sm-2 col-form-label">Type</label>
                     <div className="col-sm-10">
                        <select className="form-control" name="type">
-                       <option value="Test">Test</option>
+                       <option value="typeDispatch">Emergency Dispatch</option>
+                       <option value="typeDispatch">Ambulatory Services</option>
+                       <option value="typeDispatch">Police</option>
+                       <option value="typeDispatch">Fire Rescue</option>
                        </select>
                     </div>
                 </div>
+                <div className="form-group row">
+                    <label htmlFor="desc" className="col-sm-2 col-form-label">Sharing</label>
+                    <div className="col-sm-10">
+                        <select className="form-control" name="sharing">
+                       <option value="sharingPrivate">Private</option>
+                       <option value="sharingPublic">Public</option>    
+                       </select>                     
+                       <div>
+                           By default, your comment will only be shared with the team you 
+                           interacted with. If you give your permission however, the agency may also
+                           share your comment with other first responders or on social media.
+                        </div>   
+                    </div>        
+                </div>
+                <br/>
                 <Link type="submit" className="btn btn-primary" to="/thankyou" style={{ textDecoration: 'none'}}>
                    Submit
                 </Link>
+                <br/>
+                <br/>
             </form>
-            </div>
+        </div>
       </div>
     );
   }
