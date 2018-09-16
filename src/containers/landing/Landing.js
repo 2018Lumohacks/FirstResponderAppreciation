@@ -9,7 +9,7 @@ class Landing extends Component {
       <header className="Landing-header">
         <div className="Landing">
           <Welcome/>
-          <Link className="btn btn-success btn-xl"to="/newPost" style={{ textDecoration: 'none'}}>Start</Link>
+          <Link className="btn btn-success btn-xl"to="/newPost">Start</Link>
         </div>
       </header>
     );
