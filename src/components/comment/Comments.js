@@ -19,25 +19,33 @@ class Comments extends Component {
     }
     render() {
         return (
-            <table>
-                <tr>
-                    <td>
-                        Title: {this.state.data.map(comment => comment.title)}
-                        <br/>
-                        Text: {this.state.data.map(comment => comment.text)}
-                    </td>
-                    <td>
-                        Title: {this.state.data.map(comment => comment.title)}
-                        <br/>
-                        Text: {this.state.data.map(comment => comment.text)} 
-                    </td>
-                    <td>
-                        Title: {this.state.data.map(comment => comment.title)}
-                        <br/>
-                        Text: {this.state.data.map(comment => comment.text)}
-                    </td>                  
-                </tr>
-            </table>
+        <table>
+            {this.state.data.map(comment => (
+           <tr>
+               <td>
+                   <p>
+                   Title: {comment.title}
+                   <br/>
+                   Text: {comment.text}
+                   </p>
+               </td>               
+               <td>
+               <p>
+                   Title: {comment.title}
+                   <br/>
+                   Text: {comment.text}
+                   </p>
+               </td>
+               <td>
+               <p>
+                   Title: {comment.title}
+                   <br/>
+                   Text: {comment.text}
+                   </p>
+               </td>                  
+           </tr>
+            ))}
+       </table>
         );
     }
 }
