@@ -2,7 +2,7 @@ import React from 'react';
 import './button.css';
 const Button = (props) => {
     return(
-        <button>Success</button>
+        <button class="btn-success">Start</button>
     );
 }
 
