@@ -20,7 +20,7 @@ class Comments extends Component {
     render() {
         return (
         <table>
-            {this.state.data.map(comment => (
+            {this.state.data.map((comment, index) => (
            <tr>
                <td>
                    <p>
@@ -34,7 +34,7 @@ class Comments extends Component {
                    Title: {comment.title}
                    <br/>
                    Text: {comment.text}
-                   </p>
+                </p>
                </td>
                <td>
                <p>
@@ -46,7 +46,7 @@ class Comments extends Component {
            </tr>
             ))}
        </table>
-        );
+        )
     }
 }
 
