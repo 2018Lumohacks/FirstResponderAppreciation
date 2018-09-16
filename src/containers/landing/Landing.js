@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import './Landing.css';
+import Welcome from '../../components/welcome/welcome';
 
 class Landing extends Component {
   render() {
@@ -8,6 +9,7 @@ class Landing extends Component {
         <header className="App-header">
           <h1 className="App-title">Landing</h1>
         </header>
+        <Welcome/>
       </div>
     );
   }

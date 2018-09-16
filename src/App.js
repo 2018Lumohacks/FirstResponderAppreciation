@@ -4,7 +4,7 @@ import {
   Route
 } from "react-router-dom";
 import './App.css';
-import Landing from './containers/landing/Landing'
+import Landing from './containers/landing/Landing';
 class App extends Component {
   render() {
     return (
