@@ -1,4 +1,4 @@
-body {
+.Landing-header {
     background-image: url("../../images/paramedics.jpg");
     height: 100vw;
 
@@ -21,7 +21,7 @@ header {
 }
 
 .Landing {
-    background:rgba(255,255,255,0.4);
+    background:rgba(255,255,255,0.7);
     padding: 20px;
 }
   
