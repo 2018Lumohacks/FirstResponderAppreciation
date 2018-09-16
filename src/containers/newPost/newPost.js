@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { Link } from 'react-router-dom';
 import './newPost.css';
 
 import {
@@ -111,9 +112,9 @@ class NewPost extends Component {
                        </select>
                     </div>
                 </div>
-                <button type="submit" className="btn btn-primary">
+                <Link type="submit" className="btn btn-primary" to="/thankyou" style={{ textDecoration: 'none'}}>
                    Submit
-                </button>
+                </Link>
             </form>
             </div>
       </div>
