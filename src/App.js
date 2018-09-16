@@ -6,6 +6,7 @@ import {
 import './App.css';
 import Landing from './containers/landing/Landing'
 import ThankYou from './containers/thankYou/ThankYou'
+import NewPost from './containers/newPost/newPost';
 
 class App extends Component {
   render() {
@@ -15,6 +16,8 @@ class App extends Component {
           <div>
             <Route exact path="/" component = {Landing} />
             <Route exact path="/ThankYou" component = { ThankYou} />
+            <Route exact path="/newPost" component = {NewPost} />
+
           </div>
         </Router>
       </div>

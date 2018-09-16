@@ -1,0 +1,27 @@
+.Landing-header {
+    background-image: url("../../images/paramedics.jpg");
+    height: 100vw;
+
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+
+    height:100vh;
+    overflow-y: scroll;
+
+    /* -webkit-filter: blur(5px);
+    -moz-filter: blur(5px);
+    -o-filter: blur(5px);
+    -ms-filter: blur(5px);
+    filter: blur(5px); */
+}
+
+header {
+    padding-top: 30%;
+}
+
+.Landing {
+    background:rgba(255,255,255,0.7);
+    padding: 20px;
+}
+  
